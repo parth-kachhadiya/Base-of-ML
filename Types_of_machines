@@ -1,0 +1,10 @@
+Q.1 What is classic machine and adaptive machines ?
+  [a]. Classic machines
+      -> A machine which is made for specific task, and performs exately based on its task definition is called as classic/Non-adaptive machines
+      -> It cannot be adaptive with respect to the new environment
+
+  [b]. Adaptive machines
+      -> It also takes "feedback" as input
+      -> Adopts changes in environment
+      -> Feedback = peace of information about the changes in environment
+      -> It has a little bit capacity to think like human brain
