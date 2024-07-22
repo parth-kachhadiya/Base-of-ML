@@ -32,7 +32,9 @@ FILTER METHOD                                          WRAPPER METHOD           
 -> Each filtering methods try to find out that, how much individual features are corelated to the output feature
 -> Does individual features has any relation with dependent output feature or not ?
 
-Q. What does these methods does ?
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+
+Q.2 What does these methods does ?
   1. Filter method
     Elimination and feature selection
 
@@ -41,3 +43,14 @@ Q. What does these methods does ?
 
   3. Embedded method
     Similar as embedded method
+
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+
+Q.3 What is PCA(Principal component analysis)
+    -> For overfitting problem
+    -> It trys to convert high dimentionality into low dimentionality
+    -> It fully depends on the view point, how you see, from where you see the graph
+    -> Number of PC can be <= Number of features
+    -> In case of multipal PCs, 1st PC will have higher prioarity and than compare with eachother for better decision
+    -> All PCs must be orthogonal to each other(Meaning: All PCs must be indipendent to each other)
+
