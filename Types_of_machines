@@ -8,3 +8,36 @@ Q.1 What is classic machine and adaptive machines ?
       -> Adopts changes in environment
       -> Feedback = peace of information about the changes in environment
       -> It has a little bit capacity to think like human brain
+
+-> 'Features' are the columns of the dataset
+-> It is necessary to identify necessary features for model training, because in dataset, some features doesn't contribute to get efficient prediction value
+
+                                                 ------------------------------
+                                                 | TYPES OF FEATURE SELECTION |
+                                                 ------------------------------ 
+                                                              |
+                                                              |
+                                                              |
+  ---------------------------------------------------------------------------------------------------------------------------
+  |                                                           |                                                             |                                                        
+  |                                                           |                                                             |    
+FILTER METHOD                                          WRAPPER METHOD                                                EMBEDDED METHODS
+
+1.Variance threshold                                   1.Recursive feature elimination                               1.Lasso regression(L1 reg.)                                
+2.Correlation matrix with heatmap                      2.Sequential feature selection                                2.Ridge regression(L2 reg.)
+3.chi-squared test                                     3.Genetic algorithms                                          3.Elastic net
+4.ANOVA (Analysis for variance)                                                                                      4.Tree based method
+5.IG(information gain) method
+
+-> Each filtering methods try to find out that, how much individual features are corelated to the output feature
+-> Does individual features has any relation with dependent output feature or not ?
+
+Q. What does these methods does ?
+  1. Filter method
+    Elimination and feature selection
+
+  2. Wrapper method
+    Combines the output feature + combination of indipendent features, and generates 'n' number of models based combinations, and checks the accuracy of each model
+
+  3. Embedded method
+    Similar as embedded method
