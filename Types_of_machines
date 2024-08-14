@@ -64,13 +64,17 @@ Q.4 What is R-squared
 
     -> Usually, in most of cases (R ** 2) < SStot
     -> Lies between 0 and 1
-    -> THUMB RULE FOR IT....
+    -> THUMB RULE FOR IT....(based on industry use cases)
        [a]. 1.0 : Perfect fit (suspecious)
        [b]. ~0.9 : Very good
        [c]. <0.7 : Not great
        [d]. <0.4 : Terrible
        [e]. <0 : Model makes no sence for this data
 
-    
+    Adjusted R-squared = 1 - (1 - (R ** 2)) * (n - 1/n - k - 1)
+        In which:
+          n : Sample size
+          k : Number of independent veriables
+
 
 
