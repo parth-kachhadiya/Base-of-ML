@@ -54,3 +54,23 @@ Q.3 What is PCA(Principal component analysis)
     -> In case of multipal PCs, 1st PC will have higher prioarity and than compare with eachother for better decision
     -> All PCs must be orthogonal to each other(Meaning: All PCs must be indipendent to each other)
 
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+
+Q.4 What is R-squared
+    SSres = SUM(Yi - Yhat) ** 2 ||  SUM(actual value of Y - predicted value of Y) ** 2
+    SStot = SUM(Yi = Yavg) ** 2 ||  SUM(actual value of Y - average value of Y) ** 2
+
+    (R ** 2) = 1 - (SSres/SStot)
+
+    -> Usually, in most of cases (R ** 2) < SStot
+    -> Lies between 0 and 1
+    -> THUMB RULE FOR IT....
+       [a]. 1.0 : Perfect fit (suspecious)
+       [b]. ~0.9 : Very good
+       [c]. <0.7 : Not great
+       [d]. <0.4 : Terrible
+       [e]. <0 : Model makes no sence for this data
+
+    
+
+
