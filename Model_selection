@@ -48,6 +48,34 @@ Q: Steps of model selection // Hyperparameters, cross validation, grid search, r
 
 Some important topics
 
+1. What is parameters & hyperparameters
+  [a]. perameters:
+       Veriables that change the behaviour of the system || The value that can change the accuracy of the model are called as 'veriables'
+          ex. In linear regression( y = mx + b)
+              where m = slope & b = intercept, these 2 veriables can change the behaviour of model
+          ex. Gradient descent
+              where  g(x,y) , learning rate & Batch size
+
+                                                TYPES OF PARAMETERS
+                                                        |
+          ----------------------------------------------------------------------------------------------
+          |                                                                                            |
+    Model parameters                                                                             Hyperparameters
+
+    1. Model parameters
+
+            Model     |    Model parameters
+        -------------------------------------
+        Linear model  |   Slope & intercept
+        Decision tree |   Binary fetures (f1,f2...fn)
+        KNN           |          -
+      
+              Best value of model parameters => Best function in the function class
+              Generally we uses 'algebra' or 'gradient-based methods' to find the optimal values of model parameters
+
+    2 Hyperparameter
+        Remained parameters after the model parameters are called as 'hyperparameters'
+
 2. Cross Validation (Exam Preparation: Studying different parts and testing yourself on the parts not studied in that session.)
   Definition:
     Cross-validation is a technique used to evaluate the performance of a machine learning model by dividing the data into multiple parts.
