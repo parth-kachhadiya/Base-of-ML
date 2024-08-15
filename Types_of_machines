@@ -57,6 +57,7 @@ Q.3 What is PCA(Principal component analysis)
 > - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
 
 Q.4 What is R-squared
+    Generally useful to measure the performance of model
     SSres = SUM(Yi - Yhat) ** 2 ||  SUM(actual value of Y - predicted value of Y) ** 2
     SStot = SUM(Yi = Yavg) ** 2 ||  SUM(actual value of Y - average value of Y) ** 2
 
