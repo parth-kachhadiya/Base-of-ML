@@ -1,0 +1,91 @@
+Q: Steps of model selection // Hyperparameters, cross validation, grid search, random search, residuals
+  1. Understanding your data
+    - Data Exploration: Look at summary statistics and distributions.
+    - Visualization: Plot relationships between features and the target variable.
+    - Data Cleaning: Handle any missing values or outliers.
+
+  2. Feature selection and engineering
+    - Feature Scaling: Normalize or standardize features to ensure they are on a similar scale, which can improve model performance.
+    - Feature Interaction: Sometimes combining features (e.g., AT * RH) can provide better predictive power.
+
+  3. Model Selection
+    - Linear Regression: Simple and interpretable.
+    - Polynomial Regression: Captures non-linear relationships.
+    - Support Vector Regression (SVR): Good for smaller datasets, handles non-linearity.
+    - Decision Tree Regression: Non-linear, easy to interpret, but can overfit.
+    - Random Forest Regression: Ensemble method, reduces overfitting, handles non-linearity well.
+    - Gradient Boosting Machines (GBM): Powerful ensemble method, can achieve high accuracy.
+    - Neural Networks: Can capture complex relationships, but require more data and tuning.
+
+  4. Model parameters (Hyperparameters)
+    - Linear Regression: No significant parameters, but consider regularization (Ridge, Lasso).
+    - SVR: Kernel type (linear, polynomial, RBF), C (regularization parameter), epsilon (tube size).
+    - Decision Trees: Max depth, min samples split, min samples leaf.
+    - Random Forests: Number of trees, max depth, min samples split, min samples leaf.
+    - GBM: Learning rate, number of trees, max depth, min samples split.
+    - Neural Networks: Number of layers, number of neurons per layer, learning rate, activation functions.
+
+  5. Model training and validation
+    - Train/Test Split: Divide your dataset into training and testing sets (e.g., 80/20 split).
+    - Cross-Validation: Use k-fold cross-validation to ensure your model generalizes well to unseen data.
+    - Grid Search/Random Search: To find the best hyperparameters, use techniques like grid search or random search over your parameter space.
+    
+  6. Evaluation matrics
+    - Mean Absolute Error (MAE): Average absolute difference between predicted and actual values.
+    - Mean Squared Error (MSE): Average squared difference, penalizes larger errors.
+    - Root Mean Squared Error (RMSE): Square root of MSE, easier to interpret.
+    - R-squared (R²): Proportion of variance explained by the model.
+
+  7. Model interpretability and diagnostics
+    - Residual Analysis: Check residuals (difference between predicted and actual values) to ensure no patterns remain.
+    - Feature Importance: For models like random forests, look at feature importance scores.
+
+  8. Model deployment
+    - Save the Model: Use libraries like joblib or pickle in Python.
+    - Monitor Performance: Continuously check the model’s performance with new data to ensure it remains accurate.
+
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+
+Some important topics
+
+2. Cross Validation (Exam Preparation: Studying different parts and testing yourself on the parts not studied in that session.)
+  Definition:
+    Cross-validation is a technique used to evaluate the performance of a machine learning model by dividing the data into multiple parts.
+    The model is trained on some parts and tested on the remaining parts to ensure it generalizes well to new data.
+
+  Real-Life Example:
+    Imagine you’re preparing for a school exam by doing practice tests. Instead of using the same practice test every time, you split your study material into 5 different parts. 
+    Each time you study, you leave one part out and test yourself on it after studying the other four parts. This way, you get a better sense of your overall readiness.
+
+  In Machine Learning:
+    In k-fold cross-validation, the data is divided into k parts (folds). The model is trained on k-1 folds and tested on the remaining fold. 
+    This process is repeated k times, and the results are averaged to get a final performance estimate.
+
+3. Grid Search (Recipe Testing: Trying all possible combinations of ingredients.)
+  Definition:
+    Grid search is a method used to find the best hyperparameters for a model by trying out all possible combinations of a given set of hyperparameters.
+
+  Real-Life Example:
+    Think of grid search like trying out different combinations of ingredients to make the best recipe. 
+    If you have 3 types of flour, 2 types of sugar, and 3 types of milk, you would try all 18 (3x2x3) combinations to see which one makes the best cake.
+
+  In Machine Learning:
+    You specify a range of values for each hyperparameter. 
+    The grid search tests all possible combinations and identifies the combination that gives the best model performance.
+
+4. Random Search (Random Recipe Testing: Trying a random subset of ingredient combinations.)
+  Definition:
+    Random search is similar to grid search but instead of trying all possible combinations of hyperparameters, it randomly selects a subset of combinations to try.
+
+  Real-Life Example:
+    Imagine you’re still trying to make the best cake, but instead of testing all 18 combinations of flour, sugar, and milk, you randomly select 5 combinations to test. 
+    It’s faster but might not always find the absolute best combination.
+
+  In Machine Learning:
+    You specify the range of values for each hyperparameter, but instead of testing all combinations, random search selects a random subset. 
+    This method is often faster and can be effective when there are many hyperparameters.
+
+5. Residuals (Weather Prediction: The difference between predicted and actual temperatures.)
+  Definition:
+    Residuals are the differences between the actual values and the predicted values made by a regression model.
+
