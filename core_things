@@ -52,6 +52,60 @@
       Basics: Deployment is when you put your trained model into a real-world application. It’s like launching a product after all the testing.
       Example: Once your model is trained to recognize fruits, you deploy it in a supermarket’s self-checkout system to identify fruits as customers scan them.
 
+  [k]. Model parameters
+      Basics: Model parameters are the internal values the model learns from the training data. Unlike hyperparameters, these are adjusted automatically during the training process.
+      Example: If your model is a recipe, parameters are like the exact measurements of ingredients that you figure out through trial and error to make the dish taste just right.
+
+  [l]. Gradient descent: The learning mechanism
+      Basics: Gradient Descent is an optimization algorithm used to minimize the loss function by iteratively adjusting the model’s parameters.
+      Example: Imagine you’re hiking down a mountain in the fog. You can’t see the bottom (global minimum), but you can feel the slope under your feet (gradient). 
+               By following the slope downwards, step by step, you eventually reach the base (the minimum point of the loss function).
+
+  [m]. Cross validation: The reality check
+      Basics: Cross-validation is a technique to evaluate how well your model generalizes to unseen data by splitting the dataset into multiple training and validation sets.
+      Example: Think of cross-validation like preparing for a debate. Instead of just practicing with one friend, you practice with multiple friends (folds) to make sure you’re ready for any kind of argument. 
+              This helps ensure that your model is robust and not just memorizing the training data.
+
+   [n]. Feature scalling: The level playing field
+      Basics: Feature scaling involves normalizing or standardizing features so that they contribute equally to the model.
+      Example: If you’re playing a game where height and weight are features, but height is measured in meters and weight in kilograms, one might dominate the other. 
+               Feature scaling ensures both are on an even playing field, just like adjusting the brightness and contrast on your TV so both picture and sound are clear.
+
+   [o]. Dimentionality reduction: Simplifying the problem 
+      Basics: Dimensionality reduction techniques, like PCA (Principal Component Analysis), reduce the number of features in the dataset while retaining as much information as possible.
+      Example: Imagine you’re moving into a smaller house and need to downsize. You keep only the most essential items (principal components) that serve multiple purposes. 
+               This makes your life simpler while still retaining what’s important.
+
+   [p]. Ensemble methods: The power of many
+      Basics: Ensemble methods combine multiple models to improve performance, like voting systems where each model votes on the outcome, and the majority wins.
+      Example: Think of ensemble methods like consulting multiple experts before making a decision. 
+               Each expert (model) might have a different opinion (prediction), but by considering all their inputs, you make a better-informed decision.
+
+   [q]. Bias-variance tradeoff: The balancing act
+        Basics: The bias-variance tradeoff is the balance between underfitting (high bias) and overfitting (high variance). You want your model to generalize well to new data.
+        Example: Imagine shooting arrows at a target. High bias is like consistently missing the target in one direction, while high variance is like hitting different parts of the target each time.
+                 The goal is to hit the bullseye with consistent accuracy.
+
+   [r]. Neural network: The brainy models
+        Basics: Neural networks are models inspired by the human brain, consisting of layers of neurons that learn complex patterns in data.
+        Example: Think of a neural network as a team of workers on an assembly line. Each worker (neuron) has a specific task, and together they build something complex. 
+                 The input data passes through multiple layers, getting refined at each stage, just like raw materials turning into a finished product.
+
+   [s]. Convolutional neural network (RNNs): Memory keepers
+        Basics: RNNs are neural networks designed for sequential data, like time series or text, where past information is crucial for understanding the present.
+        Example: Think of RNNs like a storyteller who remembers the plot of the story as they narrate. 
+                 Each word (input) depends on the previous ones, allowing the RNN to generate coherent text, predict stock prices, or translate languages.
+
+   [t]. Transfer learning: Leveraging pre-knowledge
+       Basics: Transfer learning is the technique of using a pre-trained model on a similar problem as a starting point for a new, related task.
+       Example: Imagine you’ve learned to ride a bike. When you try to learn to ride a motorcycle, you don’t start from scratch—you transfer your existing knowledge of balance and steering.
+                Similarly, in machine learning, you use a model trained on one task to jump-start learning on another.
+
+   [u]. Reinforment learning: Learning by trial and error
+        Basics: Reinforcement learning is a type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize some notion of cumulative reward.
+        Example: Picture a robot in a maze. Each time it makes the right move (action) towards the exit (goal), it gets a reward (like a cookie). Over time, 
+                 the robot learns the best path to take to get out of the maze fastest and get the most cookies.
+
 > - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
 
 2. What are hyperparameters ?
