@@ -151,3 +151,77 @@ Creative examples
   Imagine you’re baking a cake, and hyperparameters are the settings on your oven and mixing speed. The learning rate is like the oven temperature; too high, and the cake burns (model diverges); too low, and it   
   doesn’t bake well (model is undertrained). The number of epochs is how long you bake the cake—too long, and it dries out (overfitting); too short, and it’s undercooked (underfitting).
   In summary, hyperparameters are the critical settings that control how your machine learns. Getting them right is like tuning an instrument—you need the perfect balance to create a harmonious result.
+
+
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+
+Core components SUPERWISE Machine learning
+
+  1. Labeled data
+      What It Is: Datasets where each example is paired with an output label.
+      Importance: Labeled data is essential for training supervised learning models to make predictions or classify data.
+  
+  2. Train/Test split
+      What It Is: Dividing the dataset into training and testing sets.
+      Importance: The model learns from the training data, and the testing data is used to evaluate its performance.
+  
+  3. Loss function
+      What It Is: A function that measures how well the model's predictions match the actual outcomes.
+      Importance: It guides the model during training, helping it minimize errors.
+  
+  4. Model evaluation matrics
+      What They Are: Metrics like accuracy, precision, recall, F1-score, and ROC-AUC that measure model performance.
+      Importance: They provide insights into how well the model is performing, especially in classification problems.
+  
+  5. Overfitting and regularization
+      What It Is: Overfitting occurs when a model performs well on training data but poorly on unseen data. Regularization techniques (like L1, L2) prevent this.
+      Importance: Balances the model's complexity to ensure it generalizes well to new data.
+
+Core components UNSUPERWISE Machine learning
+
+  1. Unlabeled data
+      What It Is: Datasets where examples are not paired with any labels.
+      Importance: The model finds patterns, structures, or relationships in the data without any guidance.
+  
+  2. Clustering
+      What It Is: Grouping data points into clusters based on similarity (e.g., K-Means, DBSCAN).
+      Importance: Helps in understanding the natural structure of data by grouping similar data points together.
+  
+  3. Dimentionality reduciton
+      What It Is: Techniques like PCA (Principal Component Analysis) that reduce the number of features while retaining important information.
+      Importance: Simplifies the dataset, making it easier to visualize and analyze.
+  
+  4. Anomaly detection
+      What It Is: Identifying outliers or rare events that don’t fit the general pattern (e.g., Isolation Forest).
+      Importance: Useful in fraud detection, network security, and quality control.
+  
+  5. Association rules
+      What They Are: Techniques that discover relationships between variables in large datasets (e.g., Apriori algorithm).
+      Importance: Commonly used in market basket analysis to find product associations.
+
+Core components REINFORCEMENT Machine learning
+
+  1. Agent
+      What It Is: The learner or decision-maker in the environment.
+      Importance: The agent interacts with the environment to achieve a goal by taking actions.
+  
+  2. Environment
+      What It Is: The world in which the agent operates, including all conditions and states.
+      Importance: The environment responds to the agent's actions, providing rewards or penalties.
+  
+  3. Reward signal
+      What It Is: Feedback given to the agent based on the action taken.
+      Importance: Guides the agent to learn which actions lead to positive outcomes.
+  
+  4. Policy 
+      What It Is: A strategy or mapping from states to actions that the agent follows.
+      Importance: Determines how the agent behaves at any given time.
+  
+  5. Value function 
+      What It Is: Estimates how good it is for the agent to be in a particular state, considering future rewards.
+      Importance: Helps the agent evaluate long-term benefits of actions rather than just immediate rewards.
+  
+  6. Exploration vs Exploitation
+      What It Is: The dilemma of choosing between exploring new actions and exploiting known ones.
+      Importance: Balancing these two helps the agent learn effectively without getting stuck in suboptimal decisions.
+
