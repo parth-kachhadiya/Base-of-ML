@@ -52,5 +52,47 @@
       Basics: Deployment is when you put your trained model into a real-world application. It’s like launching a product after all the testing.
       Example: Once your model is trained to recognize fruits, you deploy it in a supermarket’s self-checkout system to identify fruits as customers scan them.
 
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
 
-  
+2. What are hyperparameters ?
+  -> Hyperparameters are the settings or configurations you choose for your machine learning model before the training process begins. They aren’t learned from the data like other model parameters (e.g., weights       in a neural network). Instead, they control the overall structure and behavior of the model.
+
+  -> Hyperparameters significantly impact how well your model performs. Think of them as the dials on a radio. If you set them correctly, you get clear music (good performance); if not, you get static (poor       
+     performance).
+
+  COMMON TYPES OF HYPERPARAMETERS...
+  1. Learning rate (for gradient-based models)
+      What It Is: The learning rate controls how much the model's weights are adjusted with respect to the loss gradient during training.
+      Example: Imagine learning to play the piano. If you learn too quickly (high learning rate), you might make a lot of mistakes and miss out on subtle nuances. If you learn too slowly (low learning rate),                     progress might be too slow.
+      Tuning Tip: Start with a moderate learning rate and adjust based on the model’s performance. Too high, and the model might not converge; too low, and it might take forever to train.
+
+  2. Number of epochs
+      What It Is: The number of epochs defines how many times the learning algorithm will work through the entire training dataset.
+      Example: Think of it like revising for an exam. Each epoch is a full revision of your study material. If you revise too little (few epochs), you might not learn enough. If you revise too much (many epochs), 
+               you might over-study and get confused.
+      Tuning Tip: Track the model’s performance. If it stops improving or starts getting worse after a certain number of epochs, you’ve likely found the optimal number.
+
+  3. Batch size
+      What It Is: The batch size determines the number of training examples the model processes before updating its parameters.
+      Example: It’s like reading a book. You can read it page by page (small batch size) or chapter by chapter (large batch size). Smaller batches give you more frequent updates (learning more often), but larger                 batches are more efficient (processing more data at once).
+      Tuning Tip: A smaller batch size can help in finding better minima but might be computationally expensive. Larger batches are faster but might miss out on the fine details.
+
+  4. Regularization parameters( like L1,L2)
+      What It Is: Regularization parameters are used to penalize the complexity of the model to avoid overfitting. L1 regularization encourages sparsity, while L2 encourages small weights.
+      Example: Imagine you’re decorating a cake. If you go overboard with decorations (complex model), it might look cluttered (overfitting). Regularization helps you keep it simple yet beautiful.
+      Tuning Tip: Adjust the regularization strength based on how well your model generalizes to new data. More regularization for complex models, less for simpler ones.
+
+  5. Tree depth ( for decision trees)
+      What It Is: This controls how deep your decision tree can grow. A deeper tree can capture more details but might also capture noise (overfitting).
+      Example: It’s like making a decision. A shallow decision is quick and might miss out on important details, while a deep one considers everything but can be overwhelming.
+      Tuning Tip: Start with a moderate tree depth and adjust based on the balance between accuracy and overfitting.
+
+How to choose right hyperparameters
+  1. Grid Search: Systematically trying out different combinations of hyperparameters to find the best one.
+  2. Random Search: Randomly selecting hyperparameters and evaluating performance, which can sometimes be more efficient than grid search.
+  3. Bayesian Optimization: A more advanced method that models the performance of hyperparameters and uses that to select the next set of hyperparameters to try.
+
+Creative examples
+  Imagine you’re baking a cake, and hyperparameters are the settings on your oven and mixing speed. The learning rate is like the oven temperature; too high, and the cake burns (model diverges); too low, and it   
+  doesn’t bake well (model is undertrained). The number of epochs is how long you bake the cake—too long, and it dries out (overfitting); too short, and it’s undercooked (underfitting).
+  In summary, hyperparameters are the critical settings that control how your machine learns. Getting them right is like tuning an instrument—you need the perfect balance to create a harmonious result.
