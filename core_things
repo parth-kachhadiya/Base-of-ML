@@ -55,15 +55,15 @@
 > - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
 
 2. What are hyperparameters ?
-  -> Hyperparameters are the settings or configurations you choose for your machine learning model before the training process begins. They aren’t learned from the data like other model parameters (e.g., weights       in a neural network). Instead, they control the overall structure and behavior of the model.
+  -> Hyperparameters are the settings or configurations you choose for your machine learning model before the training process begins. They aren’t learned from the data like other model parameters (e.g., weights in a neural network). 
+      Instead, they control the overall structure and behavior of the model.
 
-  -> Hyperparameters significantly impact how well your model performs. Think of them as the dials on a radio. If you set them correctly, you get clear music (good performance); if not, you get static (poor       
-     performance).
+  -> Hyperparameters significantly impact how well your model performs. Think of them as the dials on a radio. If you set them correctly, you get clear music (good performance); if not, you get static (poor performance).
 
   COMMON TYPES OF HYPERPARAMETERS...
   1. Learning rate (for gradient-based models)
       What It Is: The learning rate controls how much the model's weights are adjusted with respect to the loss gradient during training.
-      Example: Imagine learning to play the piano. If you learn too quickly (high learning rate), you might make a lot of mistakes and miss out on subtle nuances. If you learn too slowly (low learning rate),                     progress might be too slow.
+      Example: Imagine learning to play the piano. If you learn too quickly (high learning rate), you might make a lot of mistakes and miss out on subtle nuances. If you learn too slowly (low learning rate), progress might be too slow.
       Tuning Tip: Start with a moderate learning rate and adjust based on the model’s performance. Too high, and the model might not converge; too low, and it might take forever to train.
 
   2. Number of epochs
@@ -74,7 +74,8 @@
 
   3. Batch size
       What It Is: The batch size determines the number of training examples the model processes before updating its parameters.
-      Example: It’s like reading a book. You can read it page by page (small batch size) or chapter by chapter (large batch size). Smaller batches give you more frequent updates (learning more often), but larger                 batches are more efficient (processing more data at once).
+      Example: It’s like reading a book. You can read it page by page (small batch size) or chapter by chapter (large batch size). Smaller batches give you more frequent updates (learning more often), 
+          but larger batches are more efficient (processing more data at once).
       Tuning Tip: A smaller batch size can help in finding better minima but might be computationally expensive. Larger batches are faster but might miss out on the fine details.
 
   4. Regularization parameters( like L1,L2)
