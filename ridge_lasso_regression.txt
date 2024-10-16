@@ -1,0 +1,82 @@
+[A]. RIDGE Regression
+    
+   ✒️ It gives same importance to all fetures
+   ✒️ Reduces the size of coefficient to reduce the chances of 'overfitting'
+
+   Parameters....
+
+   [a]. alpha : [1.0] (regularization strength)
+        ✒️ It controls how much regularization you apply
+        ✒️ Low alpha : Almost no regularization (behave like standard LinearRegression)
+	✒️ High alpha : Lots of regularization, model shrinks the coefficients aggressively
+   
+   [b]. fit_intercept : [True]
+        ✒️ Determines whether to include an intercept or not
+
+   [c]. solver 
+	✒️ Which algorithm is used to find the optimal solution of Ridge Regression
+ 
+ 	solvers.
+		➡️ 'auto' :
+			✒️ automatically selects the best solver
+		➡️ 'svd' :
+			✒️ Works well, when number of fetures is smaller than number of samples
+		➡️ 'cholesky' :
+			✒️ Fast and works well on smaller datasets
+		➡️ 'lsqr' :
+			✒️ An iterative solver, userful if your data is larger
+		➡️ 'sag' & 'saga' :
+			✒️ Efficient for large dataset, assumes that the features are already scaled
+
+    [d]. max_iter [Depends on solver]
+	 ✒️ Maximum number of iteration the solver will take
+	 ✒️ If your model is taking too long to converge(of find the best solution), you can increase this number
+
+    [e]. tol : [1e-3] (tolerance)
+	 ✒️ Sets the tolerance for stopping criteria.
+	 ✒️ It means that when the model has found a solution that doesn't improve much, it will stop early,
+             saving time.
+	 ✒️ In simple words, if model is improving by only tiny amounts, it stops looking for better solution.
+    
+    [f]. random_state : [None]
+    
+    [g]. copy_x : [True]
+ 
+    [h]. positive : [False]
+
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+
+[B]. LASSO Regression
+
+    ✒️ It forces you to prioritize by shrinking some coefficients down to zero.
+    ✒️ It can remove unnecessary variables entirely, helping feature selection & simplifying the model
+
+    [a]. alpha : [1.0]
+
+    [b]. fit_intercept : [True]
+
+    [c]. precompute : [auto]
+         ✒️ Whether to precompute the gram matrix to speed up computations.
+         ✒️ Useful in large datasets where repeated calculations can slow down the process.
+         ✒️ It's like a faster route for model to find the solution.
+	 ✒️ If dataset is large, it saves time by precomputing some stuff in advance.
+
+    [d]. max_iter : [1000]
+         ✒️ Maximum number of iterations allowed to find the optimal solution.
+         ✒️ This is the effort limit, If model takes too long to find the best solution, you can increase that number
+
+    [e]. tol : [1e-4]
+
+    [f]. selection : [cyclic]
+	 ✒️ How to choose the features to update at each iteration.
+ 	 ✒️ How the model decides to tweak things
+              ➡️ 'cyclic'
+			✒️ Update features one by one.
+              ➡️ 'random'
+			✒️ Update features in random order, which can sometimes converge faster.
+
+    [g]. random_state : [None]
+
+    [h]. copy_x : [True]
+
+    [i]. positive : [False]
