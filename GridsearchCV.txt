@@ -1,0 +1,73 @@
+[Q]. GridsearchCV
+
+Q. What is GridsearchCV 🤔??
+
+👉 Imagine you're at a big buffet, and you want the perfect plate. You're faced with a ton of choices: Should you go for a bit of spicy, or a bit of sweet? Maybe both? 😋.
+
+👉 GridSearchCV is like your master food critic. It helps you pick the best combination of ingredients (parameters) from a big menu (the grid) to make sure your model is not just good but deliciously perfect! 🍲.
+
+👉 GridSearchCV is part of sklearn.model_selection and is used for tuning hyperparameters (those mysterious ingredients) to improve the performance of your machine learning model. It tests out all possible combinations of parameters and picks the one that tastes the best... I mean, works the best!.
+
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+								Now let's dive into the parameters of GridSearchCV 🎉
+
+👉 Here's where the fun starts! Ready to meet the menu of options we can pass into GridSearchCV? Here we go!
+
+[a]. estimator (compulsory) 🤓:
+	It's the model which you want to optimize,Could be anything: Logistic Regression, Decision Tree, or maybe even Random Forest. 🧑‍🍳
+
+[b]. param_grid (compulsory) 🗺️:
+	The grid of parameters you want to test. It's like giving GridSearchCV different combinations of flavors (like {'alpha': [0.1, 0.5, 1]}), and it tests which combination makes the dish tastiest! 🍕	🍔.
+
+[c]. scoring (optional) 🏆:
+	How will the food critic judge your dish? By accuracy? Precision? Recall? You decide the scoring metric here. If you don’t specify, accuracy is the default. 🏅
+	Define model evaluation rules.
+[d]. cv (optional) 🎳:
+	The number of cross-validation folds. It's like how many rounds of taste tests you want to conduct before picking the best combination. Usually, 5 or 10 works well, but you can adjust it based on 	how thorough you want to be. 🎤
+
+[e]. n_jobs (optional) 🪸:
+	How many chefs do you want in the kitchen? This tells GridSearchCV how many parallel jobs (processes) it should run to test the combinations faster. If you’re on a powerful machine, set it to -1 to 	use all cores! 💻
+
+[f]. verbose (Optional) 🔊:
+	Want live updates while the food critic is at work? Set verbose=1, and it’ll give you progress. You can crank it up to 3 if you like a detailed play-by-play! 🗣️
+
+[g]. refit (Optional) 🔄:
+	Once it finds the best combination of ingredients (parameters), should it make the dish again? Setting refit=True means GridSearchCV will retrain your model with the best parameters. You usually 	want this to be true! 🥇
+
+[h]. error_score (Optional) 💥:
+	What happens if the critic trips on a parameter combination and it causes an error? By default, the show will go on (error_score=np.nan), but you can set this to something else if you want. 🧯
+	In simple: It tells what to do if a model crashes or gives an error while testing a certain parameter combination.
+	Default: it sets the score of that combination to 'NaN'.
+
+[i]. return_train_score (Optional) 🚂:
+	Want to know how the chef (model) did while learning? If set to True, it’ll return the training score along with the testing score. Useful for detecting overfitting. 🎢
+
+
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+									Key Methods and Properties of GridSearchCV
+
+[a]. "grid_search_cv.best_params_" 🏆:
+	This is the secret recipe GridSearchCV found to be the best! It tells you the best combination of hyperparameters from the grid.
+
+[b]. "grid_search_cv.best_score_" 🥇:
+	Think of this as the critic’s top score for the best combination of ingredients (parameters). It’s the best score achieved during cross-validation using the best parameters.
+
+[c]. "grid_search_cv.best_estimator_"  👑:
+	This gives you the master chef model, i.e., the best version of your model trained with the optimal hyperparameters found by GridSearchCV.
+
+[d]. "grid_search_cv.cv_results_" 📊:
+	This is like the full report card. It returns a dictionary with detailed results of the model performance for all parameter combinations tested during the grid search. It’s a great way to analyze 	every experiment.
+
+[e]. "grid_search_cv.refit_" 🔄:
+	This tells you if the refit (i.e., retraining the model with the best parameters) was done after the search.
+
+[f]. "grid_search_cv.scorer_" 🏅:
+	The judge’s scorecard! It tells you which scoring function (like accuracy, precision, etc.) was used to evaluate the model during cross-validation.
+
+[g]. "grid_search_cv.n_splits_" 🍕:
+	Number of folds during validation
+
+[h]. "grid_search_cv.score(X, y)" 🏅:
+	After the grid search is complete, you can use the score method to evaluate the performance of the best model on new data.
+
+
