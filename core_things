@@ -225,3 +225,70 @@ Core components REINFORCEMENT Machine learning
       What It Is: The dilemma of choosing between exploring new actions and exploiting known ones.
       Importance: Balancing these two helps the agent learn effectively without getting stuck in suboptimal decisions.
 
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+
+                                                                                          What is a Linear Relationship?
+A linear relationship means that as one variable (let’s call it x) changes, the other variable (y) changes in a constant way. In other words, if you increase or decrease x, y changes in a predictable, straight-line manner.
+
+Think of it as a straight road—no twists, no turns, just a clear path ahead. 🛣️
+
+Example 1: The Pizza Price Calculator 🍕
+Imagine you’re at a pizza shop. Each slice costs $2.
+
+If you buy 1 slice, you pay $2.
+If you buy 2 slices, you pay $4.
+If you buy 3 slices, you pay $6.
+The price goes up by exactly $2 for every slice you add. This is a linear relationship: the number of slices (x) and the total price (y) have a straight, predictable relationship.
+
+In terms of a graph, if you plot the number of slices on the x-axis and the total price on the y-axis, you’ll get a straight line. For each increase of 1 slice, the price increases by a constant $2.
+
+Example 2: Running at a Constant Speed 🏃‍♂️
+Imagine you’re running a race at a constant speed of 10 km per hour.
+
+After 1 hour, you’ve covered 10 km.
+After 2 hours, you’ve covered 20 km.
+After 3 hours, you’ve covered 30 km.
+The distance traveled is directly proportional to the time you spend running. If you increase the time (x), the distance (y) increases at the same rate. Again, this is a linear relationship.
+
+Graphically, if you plot time (x-axis) versus distance (y-axis), you get a straight line.
+
+What is a Non-Linear Relationship?
+A non-linear relationship means that as one variable (x) changes, the other variable (y) changes in a non-constant way. This is where the relationship gets curvy, and y does not follow a straight-line pattern when x changes.
+
+It’s like driving up a roller coaster track—there are twists, dips, and loops, and the relationship between time and height isn’t predictable in a straight line. 🎢
+
+Example 1: Throwing a Ball Up in the Air 🎾
+When you throw a ball into the air, its height follows a non-linear pattern.
+
+As the ball goes up, it slows down, reaches a peak, and then starts falling faster and faster.
+The relationship between time (x) and height (y) is curved: at first, the ball's height increases quickly, then slows as it reaches its peak, and finally drops rapidly.
+
+Graphically, this would look like a parabola—a U-shaped curve.
+
+Example 2: Learning a New Skill 📚
+When you start learning a new skill (like playing guitar 🎸), your progress is fast in the beginning—you learn the basics quickly. But after a while, your progress slows down because the concepts become more complex.
+
+So the relationship between time spent practicing (x-axis) and how skilled you are (y-axis) is non-linear:
+
+Initially, a small amount of time gives you huge progress.
+Later on, you have to put in a lot more time to see small improvements.
+Graphically, this would look like a curve that flattens out—it rises fast at first and then slows down.
+
+Example 3: Crowd Behavior at a Sale Event 🛒
+Imagine there’s a huge sale event, and as the discount increases, more people start showing up. However:
+
+At a small discount (5%), only a few people come.
+When the discount hits 50%, people rush to the store!
+But even if the discount goes beyond 50% (say to 70%), the crowd size only increases a little more because most of the interested people are already there.
+So the relationship between discount percentage (x-axis) and number of people (y-axis) is non-linear:
+
+Initially, as the discount increases, the number of people rises quickly.
+But after a certain point, the number of people doesn’t increase much, even if the discount goes higher.
+Graphically, this might look like an S-curve (steep rise followed by a leveling off).
+
+Summary: Key Differences
+Linear relationship: Both variables change at a constant rate. In graph terms, it’s a straight line.
+Example: Pizza slices and price 🍕 (constant increase in price with each slice).
+Non-linear relationship: The variables do not change at a constant rate; instead, the relationship is curved or has turning points.
+Example: Throwing a ball 🎾 (height goes up, slows down, then falls).
+In real-world data, if you notice the pattern isn’t a simple straight line, you’re probably dealing with a non-linear relationship!
