@@ -55,11 +55,16 @@
 
     [b]. fit_intercept : [True]
 
-    [c]. precompute : [auto]
-         ✒️ Whether to precompute the gram matrix to speed up computations.
+    [c]. precompute : 
+         ✒️ Whether to precompute the gram matrix(A matrix derived from the dot products of the features) to speed up computations.
          ✒️ Useful in large datasets where repeated calculations can slow down the process.
          ✒️ It's like a faster route for model to find the solution.
 	 ✒️ If dataset is large, it saves time by precomputing some stuff in advance.
+	     👉 If precompute=True, lasso will compute and store gram matrix(Which is like a big cheat sheet of all feature relationship) before starting optimization
+	         it makes process faster, specially when number of rows in dataset is larger
+	     👉 If precompute=False, It won't calculate gram matrix & will rely on recalculating necessary information during each steps of optimization
+		 this can be slower for large dataset.	
+             👉 use 'True' for larger dataset & 'False' for smaller dataset where no need to speedup.
 
     [d]. max_iter : [1000]
          ✒️ Maximum number of iterations allowed to find the optimal solution.
