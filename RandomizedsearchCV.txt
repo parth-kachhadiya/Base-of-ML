@@ -45,7 +45,7 @@ Key Differences Between GridSearchCV and RandomizedSearchCV:
 	Example: random_state=42 for consistent random results.
 
 [i]. error_score [np.nan]🚨:
-	Defines what to do if a parameter combination causes an error. You can set it to 'raise' to throw the error or to a specific value like 0.0 to assign that value as the score for 	failed fits.
+	Defines what to do if a parameter combination causes an error. You can set it to 'raise' to throw the error or to a specific value like 0.0 to assign that value as the score for failed fits.
 	Default: np.nan (assigns NaN for any errors)
 	Example: error_score=0 to give a score of 0 for models that raise errors.
 
