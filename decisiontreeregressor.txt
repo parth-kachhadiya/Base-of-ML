@@ -38,15 +38,3 @@
 
 [k]. ccp_alpha [0.0]:
 	Controls pruning, which trims branches that add little to the prediction quality. Higher values make the tree simpler.
-
-
-
-
-
-
-
-
-
-
-
-
