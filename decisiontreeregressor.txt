@@ -1,0 +1,52 @@
+[Q]. Decisiontreeregressor
+
+> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <> - <
+						Parameters of Decisiontreeregressor
+
+[a]. criterion [squared_error]:
+	Decides how you measure the “quality” of each split. Choices include “squared_error” (measures variance) and others like “absolute_error.”
+	Option : [squared_error, friedman_mse, absolute_error, poisson]
+
+[b]. splitter:
+	Decides how to split at each level. Use "best" for the most effective split or "random" for quicker, random splits.
+	Option : [best, random]
+
+[c]. max_depth [None]:
+	Sets how deep the tree can go. A smaller number prevents the tree from getting too complex, which can help avoid overfitting.
+
+[d]. min_samples_split [2]:
+	The minimum number of samples needed in a section before splitting. Lower numbers lead to more splits; higher numbers make splits less frequent.
+
+[e]. min_samples_leaf [2]:
+	Minimum samples required at each leaf (end node) to form a split, controlling the size of each leaf.
+
+[f]. min_weight_fraction_leaf [0.0]:
+	Sets a minimum weight for each leaf. Ensures only meaningful splits with enough data are made.
+
+[g]. max_features [None]:
+	Limits the number of features considered at each split. auto or sqrt are common options that can make the tree simpler.
+	Options : [auto,sqrt,log2]
+
+[h]. random_state [None]:
+	Controls randomness. Set this to get the same tree structure every time you train with the same data.
+
+[i]. max_leaf_nodes [None]:
+	Limits the number of end nodes (leaves). Keeps the tree from growing too big.
+
+[j]. min_impurity_decrease [0.0]:
+	Sets a threshold for impurity reduction. A split only happens if it reduces impurity by this amount or more.
+
+[k]. ccp_alpha [0.0]:
+	Controls pruning, which trims branches that add little to the prediction quality. Higher values make the tree simpler.
+
+
+
+
+
+
+
+
+
+
+
+
